@@ -14,7 +14,7 @@ logging.getLogger('markdown_it').setLevel(logging.WARNING)
 logging.getLogger('urllib3').setLevel(logging.WARNING)
 logging.getLogger('matplotlib').setLevel(logging.WARNING)
 
-model = Svc("logs/44k/G_114400.pth", "configs/config.json", cluster_model_path="logs/44k/kmeans_10000.pt")
+model = Svc("logs/44k/G_10400.pth", "configs/config.json", cluster_model_path="logs/44k/kmeans_10000.pt")
 
 
 
@@ -49,8 +49,8 @@ with app:
         with gr.TabItem("Basic"):
             gr.Markdown(value="""
                 sovits4.0 在线demo
-                
-                此demo为预训练底模在线demo，使用数据：云灏 即霜 辉宇·星AI 派蒙 绫地宁宁
+
+                此demo为预训练底模在线demo，使用数据：明前奶绿
                 """)
             spks = list(model.spk2id.keys())
             sid = gr.Dropdown(label="音色", choices=["nen", "yunhao","paimon", "huiyu","jishuang"], value="yunhao")
@@ -65,6 +65,3 @@ with app:
         vc_submit.click(vc_fn, [sid, vc_input3, vc_transform,auto_f0,cluster_ratio, noise_scale], [vc_output1, vc_output2])
 
     app.launch()
-
-
-
