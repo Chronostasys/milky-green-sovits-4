@@ -48,9 +48,9 @@ with app:
     with gr.Tabs():
         with gr.TabItem("Basic"):
             gr.Markdown(value="""
-                sovits4.0 在线demo
+                SoVITS 4.0 在线 demo，基于 https://github.com/innnky/so-vits-svc/tree/4.0
 
-                此demo为预训练底模在线demo，使用数据：明前奶绿
+                此 demo 为预训练底模在线 demo，使用数据：明前奶绿
                 """)
             spks = list(model.spk2id.keys())
             sid = gr.Dropdown(label="音色", choices=["mqnl-covers-v3"], value="mqnl-covers-v3")
