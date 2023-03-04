@@ -53,7 +53,7 @@ with app:
                 此demo为预训练底模在线demo，使用数据：明前奶绿
                 """)
             spks = list(model.spk2id.keys())
-            sid = gr.Dropdown(label="音色", choices=["mqnl-covers-3"], value="mqnl-covers-3")
+            sid = gr.Dropdown(label="音色", choices=["mqnl-covers-v3"], value="mqnl-covers-v3")
             vc_input3 = gr.Audio(label="上传音频（长度小于45秒）")
             vc_transform = gr.Number(label="变调（整数，可以正负，半音数量，升高八度就是12）", value=0)
             cluster_ratio = gr.Number(label="聚类模型混合比例，0-1之间，默认为0不启用聚类，能提升音色相似度，但会导致咬字下降（如果使用建议0.5左右）", value=0)
