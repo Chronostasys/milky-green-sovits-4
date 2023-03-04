@@ -1,5 +1,5 @@
 ---
-title: Milky Green Sovits 4
+title: Milky Green SoVITS 4
 emoji: 🍵
 colorFrom: cyan
 colorTo: green
