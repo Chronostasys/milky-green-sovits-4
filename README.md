@@ -1,8 +1,8 @@
 ---
 title: Milky Green Sovits 4
-emoji: 🐨
-colorFrom: indigo
-colorTo: yellow
+emoji: 🍵
+colorFrom: cyan
+colorTo: green
 sdk: gradio
 sdk_version: 3.19.1
 app_file: app.py
