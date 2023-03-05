@@ -14,7 +14,7 @@ logging.getLogger('markdown_it').setLevel(logging.WARNING)
 logging.getLogger('urllib3').setLevel(logging.WARNING)
 logging.getLogger('matplotlib').setLevel(logging.WARNING)
 
-model = Svc("logs/44k/G_10400.pth", "configs/config.json", cluster_model_path="logs/44k/kmeans_10000.pt")
+model = Svc("logs/44k/G_110400.pth", "configs/config.json", cluster_model_path="logs/44k/kmeans_10000.pt")
 
 
 
